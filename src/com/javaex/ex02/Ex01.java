@@ -1,4 +1,4 @@
-package com.javaex.ex01;
+package com.javaex.ex02;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class Ex02 {
+public class Ex01 {
 
 	public static void main(String[] args) throws IOException {
 		// 1.2 IO stream - 바이트 스트, bufferdStream
