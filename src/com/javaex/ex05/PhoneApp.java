@@ -23,7 +23,10 @@ public class PhoneApp {
 			 String[] sArray= str.split(",");
 			 Person p = new Person(sArray[0], sArray[1], sArray[2]);
 			 pList.add(p);
-		}		
+		}
+		for(Person p:pList) {
+			p.showInfo();
+		}
 		br.close();
 	}
 
