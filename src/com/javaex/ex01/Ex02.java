@@ -11,7 +11,7 @@ import java.io.OutputStream;
 public class Ex02 {
 
 	public static void main(String[] args) throws IOException {
-		// 1.2 IO stream, bufferdStream
+		// 1.2 IO stream - 바이트 스트, bufferdStream
 
 		InputStream in = new FileInputStream("/Users/hs/JavaStudy/file/img.jpg");
 		BufferedInputStream bin = new BufferedInputStream(in);
