@@ -21,10 +21,7 @@ public class PhoneApp {
 		
 		Reader fr = new FileReader("/Users/hs/JavaStudy/file/PhoneDB.txt");
 		BufferedReader br = new BufferedReader(fr);
-		
-		Writer fw = new FileWriter("/Users/hs/JavaStudy/file/PhoneDB.txt");//출력을 저장할파일 경로
-		BufferedWriter bw = new BufferedWriter(fw);
-		
+				
 		List<Person> pList = new ArrayList<Person>();
 		
 		//메모장을 읽어서 리스트에 저장
@@ -44,6 +41,9 @@ public class PhoneApp {
 		String[] sArray = put.split(",");
 		Person p = new Person(sArray[0], sArray[1], sArray[2]);
 		pList.add(p);
+		
+		Writer fw = new FileWriter("/Users/hs/JavaStudy/file/PhoneDB.txt");//출력을 저장할파일 경로, 생성하는 순간 파일이 백지가 됨.
+		BufferedWriter bw = new BufferedWriter(fw);
 		
 		//배열을 메모장으로 출력
 		for(Person ps:pList) {
