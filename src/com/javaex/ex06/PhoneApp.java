@@ -34,6 +34,10 @@ public class PhoneApp {
 			Person p = new Person(sArray[0], sArray[1], sArray[2]);
 			pList.add(p);
 		}
+		//배열 출력
+		for(Person ps:pList) {
+			ps.showInfo();
+		}
 		
 		//입력을 받아서 배열에 삽입
 		System.out.println("데이터를 입력해 주세요");
@@ -42,6 +46,7 @@ public class PhoneApp {
 		Person p = new Person(sArray[0], sArray[1], sArray[2]);
 		pList.add(p);
 		
+		//파일저장용 빨대 생성
 		Writer fw = new FileWriter("/Users/hs/JavaStudy/file/PhoneDB.txt");//출력을 저장할파일 경로, 생성하는 순간 파일이 백지가 됨.
 		BufferedWriter bw = new BufferedWriter(fw);
 		
